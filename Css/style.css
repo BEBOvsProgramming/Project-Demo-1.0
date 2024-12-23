@@ -22,11 +22,9 @@ body {
   font-family: "Work Sans", "sans-serif";
 }
 
-
-
-
-
-
+html{
+  scroll-behavior: smooth;
+}
 
 
 /* notice the blue space will mark the page area whick we will put our items inside without stepping outta it  */
@@ -625,6 +623,25 @@ body {
 }
 .footer span{
   color:var(--main-color)
+}
+
+.footer .love{
+  color:red;
+}
+
+
+.footer:hover{
+  animation:jump 1.5s linear infinite;
+}
+
+@keyframes jump {
+  10%{
+    background-color:rgb(44, 23, 44);
+  }
+  100%{
+    background-color: rgb(15, 36, 49);
+  }
+  
 }
 
 .footer .scroll{
